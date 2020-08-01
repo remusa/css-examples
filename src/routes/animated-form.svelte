@@ -24,9 +24,7 @@
 
 <style>
   form {
-    background: black;
-    --text-color: #afafaf;
-    /* max-width: 500px; */
+    --text-color: #1d1d1d;
   }
 
   .field {
@@ -56,9 +54,11 @@
     font-weight: bold;
     transition: border 500ms;
   }
+
   .input:valid {
     color: yellowgreen;
   }
+
   .input:invalid {
     color: orangered;
   }
@@ -77,9 +77,11 @@
     transition: all 500ms ease;
     top: 2px;
   }
+
   .field:focus-within {
     border-color: transparent;
   }
+
   .field:focus-within::after {
     transform: scaleX(1);
     opacity: 1;
@@ -93,6 +95,7 @@
     transform-origin: 0%;
     transition: transform 400ms;
   }
+
   .field:focus-within .label,
   .input:not(:placeholder-shown) + .label {
     transform: scale(0.8) translateY(-5rem);
@@ -134,6 +137,22 @@
     background: linear-gradient(to right, yellowgreen, green);
   }
 
+  .bar:last-child {
+    margin-right: 0;
+  }
+
+  .strength-text {
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
   /* Toggle password */
   .toggle-password {
     position: absolute;
@@ -154,6 +173,7 @@
     background: transparent;
     transition: all 1000ms;
   }
+
   button:disabled {
     border-color: var(--text-color);
     color: var(--text-color);
