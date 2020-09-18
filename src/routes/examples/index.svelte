@@ -5,12 +5,16 @@
       slug: 'animated-form',
     },
     {
-      title: 'CSS-tooltips',
+      title: 'CSS-only tooltips',
       slug: 'css-tooltips',
     },
     {
       title: 'Lazy Loading Images',
       slug: 'lazy-loading',
+    },
+    {
+      title: 'CSS-only navigation',
+      slug: 'css-navigation',
     },
   ]
 </script>
